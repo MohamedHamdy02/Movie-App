@@ -1,4 +1,4 @@
-import { createBrowserRouter, Route, RouterProvider, Routes } from "react-router-dom";
+import { createHashRouter, Route, RouterProvider, Routes } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import Home from "./Components/Home/Home";
 import Movies from "./Components/Movies/Movies";
@@ -28,7 +28,7 @@ function App() {
     }
   }, []);
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: `/`,
       element: <Layout userData={userData} setUserData={setUserData} />,
