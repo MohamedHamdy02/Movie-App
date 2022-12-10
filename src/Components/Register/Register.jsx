@@ -93,10 +93,11 @@ export default function Register() {
       password: Joi.string()
         .min(6)
         .max(20)
-        .pattern(/^[a-zA-Z0-9_]{0,9}$/)
+        .pattern(/^[a-zA-Z0-9_]{0,15}$/)
         .messages({
           "string.min":
             '"Password" must contains only letters and numbers at least 6',
+          'string.pattern.base': '"Password" must contains only letters and numbers at least 6'
         }),
     });
     return schema.validate(user, { abortEarly: false });

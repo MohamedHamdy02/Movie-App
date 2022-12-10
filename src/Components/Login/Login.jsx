@@ -46,6 +46,7 @@ export default function Login({ saveUserData }) {
 
     const validation = validateLoginForm();
     if (validation.error) {
+      console.log(validation);
       setIsLoading(false);
       setErrorList(validation.error.details);
     } else {
@@ -68,10 +69,11 @@ export default function Login({ saveUserData }) {
       password: Joi.string()
         .min(6)
         .max(20)
-        .pattern(/^[a-zA-Z0-9_]{0,9}$/)
+        .pattern(/^[a-zA-Z0-9_]{0,15}$/)
         .messages({
           "string.min":
             '"Password" must contains only letters and numbers at least 6',
+          'string.pattern.base': '"Password" must contains only letters and numbers at least 6'
         }),
     });
     return scheme.validate(user, { abortEarly: false });
