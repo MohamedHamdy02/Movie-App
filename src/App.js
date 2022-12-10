@@ -1,4 +1,4 @@
-import { createHashRouter, Route, RouterProvider, Routes } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import Home from "./Components/Home/Home";
 import Movies from "./Components/Movies/Movies";

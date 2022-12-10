@@ -3,6 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Joi from "joi";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 export default function Login({ saveUserData }) {
   const [user, setUser] = useState({
@@ -138,6 +139,7 @@ export default function Login({ saveUserData }) {
             "Login"
           )}
         </button>
+        <p className="text-center mt-4 mb-4">Don't have an account? <Link to="/register">Sign up</Link></p>
       </form>
     </>
   );
