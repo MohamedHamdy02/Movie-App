@@ -139,7 +139,7 @@ export default function Login({ saveUserData }) {
             "Login"
           )}
         </button>
-        <p className="text-center mt-4 mb-4">Don't have an account? <Link to="/register">Sign up</Link></p>
+        <p className="text-center mt-4 mb-4">Don't have an account? <Link className="text-info" to="/register">Sign up</Link></p>
       </form>
     </>
   );

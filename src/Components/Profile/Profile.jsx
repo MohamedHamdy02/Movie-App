@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 
 export default function Profile({ userData }) {
   return <>
-    <Helmet>
+    {/* <Helmet>
       <meta charSet='utf-8' />
       <title>Profile Page</title>
     </Helmet>
@@ -17,6 +17,6 @@ export default function Profile({ userData }) {
         <p className='fs-4 font-size'> <span className="text-info">
           Age</span> : {userData.age}</p>
       </div>
-    </div>
+    </div> */}
   </>
 }

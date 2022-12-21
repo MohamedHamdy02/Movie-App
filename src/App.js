@@ -36,49 +36,49 @@ function App() {
         {
           index: true,
           element: (
-            <ProtectedRoute>
-              <Home userData={userData} />
-            </ProtectedRoute>
+            <Home userData={userData} />
+            // <ProtectedRoute>
+            // </ProtectedRoute>
           ),
         },
         {
           path: "movies",
           element: (
-            <ProtectedRoute>
-              <Movies userData={userData} />
-            </ProtectedRoute>
+            <Movies userData={userData} />
+            // <ProtectedRoute>
+            // </ProtectedRoute>
           ),
         },
         {
           path: "people",
           element: (
-            <ProtectedRoute>
-              <People userData={userData} />
-            </ProtectedRoute>
+            <People userData={userData} />
+            // <ProtectedRoute>
+            // </ProtectedRoute>
           ),
         },
         {
           path: "tv",
           element: (
-            <ProtectedRoute>
-              <Tv userData={userData} />
-            </ProtectedRoute>
+            <Tv userData={userData} />
+            // <ProtectedRoute>
+            // </ProtectedRoute>
           ),
         },
         {
           path: "profile",
           element: (
-            <ProtectedRoute>
-              <Profile userData={userData} />
-            </ProtectedRoute>
+            <Profile userData={userData} />
+            // <ProtectedRoute>
+            // </ProtectedRoute>
           ),
         },
         {
           path: "itemdetails/:id/:media_type/",
           element: (
-            <ProtectedRoute>
-              <ItemDetails saveUserData={saveUserData} userData={userData} />
-            </ProtectedRoute>
+            <ItemDetails saveUserData={saveUserData} userData={userData} />
+            // <ProtectedRoute>
+            // </ProtectedRoute>
           ),
         },
         { path: "login", element: <Login saveUserData={saveUserData} /> },

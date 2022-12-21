@@ -21,32 +21,33 @@ export default function Navbar({ userData, logOut }) {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            {userData ? (
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0 position-relative">
-                <li className="nav-item ">
-                  <Link className="nav-link hover text-white" to="/">
-                    Home
-                  </Link>
-                </li>
-                <li className="nav-item ">
-                  <Link className="nav-link hover text-white" to="tv">
-                    TV Shows
-                  </Link>
-                </li>
-                <li className="nav-item ">
-                  <Link className="nav-link hover text-white" to="movies">
-                    Movies
-                  </Link>
-                </li>
-                <li className="nav-item ">
-                  <Link className="nav-link hover text-white" to="people">
-                    People
-                  </Link>
-                </li>
-              </ul>
+            {/* {userData ? (
+              
             ) : (
               ""
-            )}
+            )} */}
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 position-relative">
+              <li className="nav-item ">
+                <Link className="nav-link hover text-white" to="/">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item ">
+                <Link className="nav-link hover text-white" to="tv">
+                  TV Shows
+                </Link>
+              </li>
+              <li className="nav-item ">
+                <Link className="nav-link hover text-white" to="movies">
+                  Movies
+                </Link>
+              </li>
+              <li className="nav-item ">
+                <Link className="nav-link hover text-white" to="people">
+                  People
+                </Link>
+              </li>
+            </ul>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item d-flex me-3">
                 <a
@@ -85,37 +86,39 @@ export default function Navbar({ userData, logOut }) {
                   <i className="fab fa-youtube"></i>
                 </a>
               </li>
-              {userData ? (
-                <li className="nav-item d-flex media-query align-items-center">
-                  <span className="text-white margin">Welcome
+              <li className="nav-item d-flex media-query align-items-center">
+                {/* <span className="text-white margin">Welcome
                     <span className="text-info mx-2">
                       {userData.first_name} {userData.last_name}
                     </span>
                   </span>
                   <Link to="profile">
                     <span className=" mx-3 text-white profile margin">Profile</span>
-                  </Link>
+                  </Link> */}
 
-                  <span
-                    className=" hover text-white cursor-pointer me-2 custom"
-                    onClick={logOut}>
-                    Logout
-                  </span>
-                </li>
+                <span
+                  className=" hover text-white cursor-pointer me-2 custom"
+                  onClick={logOut}>
+                  Logout
+                </span>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-white" to="register">
+                  Register
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-white" to="login">
+                  Login
+                </Link>
+              </li>
+              {/* {userData ? (
+                
               ) : (
                 <>
-                  <li className="nav-item">
-                    <Link className="nav-link text-white" to="login">
-                      Login
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link text-white" to="register">
-                      Register
-                    </Link>
-                  </li>
+                  
                 </>
-              )}
+              )} */}
             </ul>
           </div>
         </div>

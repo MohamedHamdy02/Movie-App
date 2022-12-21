@@ -219,7 +219,7 @@ export default function Register() {
             "Sign Up"
           )}
         </button>
-        <p className="text-center mt-4 mb-5">Already have an account? <Link to="/login">Login</Link></p>
+        <p className="text-center mt-4 mb-5">Already have an account? <Link className="text-info" to="/login">Login</Link></p>
       </form>
     </>
   );
